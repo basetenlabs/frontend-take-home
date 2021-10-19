@@ -1,38 +1,97 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #f9a877;
+  background: linear-gradient(
+157deg, rgba(249, 168, 119, 0.9) 0%, #fff4d8 100%);
+  overflow: auto;
+}
+
+.Instructions {
+  flex: 0;
+  padding: 40px 0;
+}
+.Instructions li {
+  margin-bottom: 4px;
+}
+.Instructions em {
+  color:#333;
+  font-weight: 700;
+}
+.Instructions code {
+  font-size: 0.875rem;
+  padding: 2px 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+.Instructions > .Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+.Instructions > .Header > .Logo {
+  flex: 0;
+  padding-right: 40px;
+}
+.Instructions > .Header > .Text {
+  flex: 1;
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.Implementation {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 1;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.Placeholder {
+  position: relative;
+  padding: 50px;
+  border: 3px dashed #888;
+  border-radius: 10px;
+  font-style: italic;
+  color: #666;
+  text-align: center;
+}
+.Placeholder::before {
+  content: 'Placeholder';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 2px 5px;
+  background-color:rgba(0, 0, 0, 0.1);
+  color: #000;
+  border-radius: 2px;
+  font-style: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Trigger {
+  margin: 20px auto;
+}
+.Trigger > button {
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.Output {
+  margin: 20px 0;
+  width: 480px;
+}
+.Output > p:first-child {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+}
+.Output > p:last-child {
+  font-style: italic;
 }

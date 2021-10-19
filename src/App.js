@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Instructions from './Instructions';
+import Placeholder from './Placeholder';
+import Trigger from './Trigger';
+import SelectedOutput from './SelectedOutput';
 
 function App() {
+  const [selected, setSelected] = useState();
+
+  function handleTrigger() {
+    setSelected('No implementation; unhandled trigger');
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Instructions />
+      <div className="Implementation">
+        <Trigger onTrigger={handleTrigger} />
+
+        {/* Replace the Placeholder component below with your implementation */}
+        <Placeholder replaceMe />
+
+        <SelectedOutput selected={selected}/>
+      </div>
     </div>
   );
 }
