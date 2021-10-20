@@ -45,4 +45,4 @@ you can aim to represent the data in your implementation in something similar to
 ```
 
 This challenge is meant to be somewhat open-ended. Feel free to make assumptions and
-unblock yourself. Just make sure to make a note of all the assumptions somewhere.
+unblock yourself. Just make sure to make a note of all the assumptions as code comments.

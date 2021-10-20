@@ -23,6 +23,7 @@ function Instructions() {
         <li>UI component can also be launched via a hotkey combination <code>&#8984;</code>+<code>K</code> or <code>Ctrl</code>+<code>K</code>.</li>
         <li>Hitting the <code>Esc</code> key will close the UI component without selecting anything.</li>
       </ul>
+      <p>Feel free to make assumptions along the way, and just note them in the comments.</p>
     </div>
   )
 }
