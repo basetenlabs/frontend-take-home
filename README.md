@@ -10,7 +10,7 @@ Here is a screenshot of it in action.
 <img width="792" alt="spotlight-1" src="https://user-images.githubusercontent.com/981800/137999694-d703e8e4-82c8-4b34-ae85-60ec732a0901.png">
 
 For our challenge we are looking to replicate a similar functionality but in the browser
-with React that searches against a predetermined list of matching.
+with React that searches against a predetermined list of objects.
 
 ## Setup
 
