@@ -1,15 +1,19 @@
 import { useState } from 'react';
 import './App.css';
 import Instructions from './Instructions';
-import Placeholder from './Placeholder';
+import SearchableSelect from './SearchableSelect';
 import Trigger from './Trigger';
 import SelectedOutput from './SelectedOutput';
 
 function App() {
+  //ok they click this button and the component pops up
+  //also the selected value will go here i guess
   const [selected, setSelected] = useState();
+  const [shouldComponentOpen, setShouldComponentOpen] = useState(false)
 
   function handleTrigger() {
-    setSelected('No implementation; unhandled trigger');
+    setSelected('still waiting');
+    setShouldComponentOpen(true)
   }
 
   return (
@@ -17,9 +21,7 @@ function App() {
       <Instructions />
       <div className="Implementation">
         <Trigger onTrigger={handleTrigger} />
-
-        {/* Replace the Placeholder component below with your implementation */}
-        <Placeholder replaceMe />
+        <SearchableSelect shouldComponentRender={shouldComponentOpen} setSelected={setSelected} />
 
         <SelectedOutput selected={selected}/>
       </div>

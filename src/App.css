@@ -54,7 +54,7 @@
   height: 100%;
 }
 
-.Placeholder {
+.SearchableSelect {
   position: relative;
   padding: 50px;
   border: 3px dashed #888;
@@ -62,9 +62,11 @@
   font-style: italic;
   color: #666;
   text-align: center;
-}
-.Placeholder::before {
-  content: 'Placeholder';
+  height: '20%';
+  overflow: hidden;
+  }
+.SearchableSelect::before {
+  content: 'Search';
   position: absolute;
   top: 5px;
   left: 5px;
@@ -73,6 +75,29 @@
   color: #000;
   border-radius: 2px;
   font-style: normal;
+}
+#parentList {
+  width: 500px;
+  height: 300px;
+  color: black;
+  overflow: auto;
+}
+#childWrapper {
+  list-style: lower-latin;
+  width: 450px;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#childWrapper > li {
+  float: left;
+  width: 150px;
+  height: 80px;
+  background-color: #55c974;
+}
+#childWrapper > li:nth-child(even) {
+  background-color: #d4ffdd;
 }
 
 .Trigger {
@@ -90,7 +115,6 @@
 .Output > p:first-child {
   font-size: 12px;
   font-weight: 500;
-  color: #666;
 }
 .Output > p:last-child {
   font-style: italic;
