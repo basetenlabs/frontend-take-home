@@ -17,5 +17,3 @@ export const Trigger: FunctionComponent<TriggerProps> = ({ onTrigger }) => {
     </div>
   );
 };
-
-export default Trigger;

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "./App.css";
-import Instructions from "./Instructions";
-import Placeholder from "./Placeholder";
-import Trigger from "./Trigger";
-import SelectedOutput from "./SelectedOutput";
+import { Instructions } from "./Instructions";
+import { Placeholder } from "./Placeholder";
+import { Trigger } from "./Trigger";
+import { SelectedOutput } from "./SelectedOutput";
 
 function App() {
   const [selected, setSelected] = useState("");

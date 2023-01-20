@@ -1,9 +1,7 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
-function Placeholder() {
+export const Placeholder: FunctionComponent = () => {
   return (
     <div className="Placeholder">Replace me with your implementation.</div>
   );
-}
-
-export default Placeholder;
+};

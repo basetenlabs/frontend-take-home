@@ -1,6 +1,6 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
-function Instructions() {
+export const Instructions: FunctionComponent = () => {
   return (
     <div className="Instructions">
       <div className="Header">
@@ -62,6 +62,4 @@ function Instructions() {
       </p>
     </div>
   );
-}
-
-export default Instructions;
+};

@@ -1,6 +1,12 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
-function SelectedOutput({ selected = "Nothing selected" }) {
+type SelectedOutputProps = {
+  selected: string;
+};
+
+export const SelectedOutput: FunctionComponent<SelectedOutputProps> = ({
+  selected = "Nothing selected",
+}) => {
   const selectedString = selected.toString();
   return (
     <div className="Output" data-cy="selected-output">
@@ -8,6 +14,4 @@ function SelectedOutput({ selected = "Nothing selected" }) {
       <p>{selectedString}</p>
     </div>
   );
-}
-
-export default SelectedOutput;
+};
