@@ -28,10 +28,10 @@ npm start
 This should have taken you to the landing page with requirements/instructions required
 to complete the challenge.
 
-## API.js
+## API.ts
 
 To simulate API responses that you would receive from a server, there is an included
-`API.js` file. This file includes a `search(<term>)` function that will return an array
+`API.ts` file. This file includes a `search(<term>)` function that will return an array
 of results given a `term`.
 
 The dataset is just a simple collection of popular ML models. For your implementation
