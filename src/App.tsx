@@ -6,7 +6,7 @@ import Trigger from './Trigger';
 import SelectedOutput from './SelectedOutput';
 
 function App() {
-  const [selected, setSelected] = useState();
+  const [selected, setSelected] = useState("");
 
   function handleTrigger() {
     setSelected('No implementation; unhandled trigger');
@@ -19,7 +19,7 @@ function App() {
         <Trigger onTrigger={handleTrigger} />
 
         {/* Replace the Placeholder component below with your implementation */}
-        <Placeholder replaceMe />
+        <Placeholder />
 
         <SelectedOutput selected={selected}/>
       </div>

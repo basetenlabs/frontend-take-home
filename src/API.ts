@@ -580,7 +580,7 @@ const fuse = new Fuse(MODELS, {
   keys: ['id', 'author', 'type']
 })
 
-function search(term) {
+function search(term : string) {
   return fuse.search(term);
 }
 
