@@ -1,10 +1,8 @@
-import React from 'react'
+import React from "react";
 
 function Placeholder() {
   return (
-    <div className="Placeholder">
-      Replace me with your implementation.
-    </div>
+    <div className="Placeholder">Replace me with your implementation.</div>
   );
 }
 

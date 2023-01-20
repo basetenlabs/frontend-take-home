@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import './App.css';
-import Instructions from './Instructions';
-import Placeholder from './Placeholder';
-import Trigger from './Trigger';
-import SelectedOutput from './SelectedOutput';
+import { useState } from "react";
+import "./App.css";
+import Instructions from "./Instructions";
+import Placeholder from "./Placeholder";
+import Trigger from "./Trigger";
+import SelectedOutput from "./SelectedOutput";
 
 function App() {
   const [selected, setSelected] = useState("");
 
   function handleTrigger() {
-    setSelected('No implementation; unhandled trigger');
+    setSelected("No implementation; unhandled trigger");
   }
 
   return (
@@ -21,7 +21,7 @@ function App() {
         {/* Replace the Placeholder component below with your implementation */}
         <Placeholder />
 
-        <SelectedOutput selected={selected}/>
+        <SelectedOutput selected={selected} />
       </div>
     </div>
   );
