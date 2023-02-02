@@ -15,7 +15,7 @@
 
 .Instructions {
   flex: 0;
-  padding: 40px 0;
+  margin: 15px;
 }
 
 .Instructions li {
@@ -27,11 +27,8 @@
   font-weight: 700;
 }
 
-.Instructions code {
-  font-size: 0.875rem;
-  padding: 2px 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 3px;
+.Instructions blockquote {
+  text-align: center;
 }
 
 .Instructions > .Header {
@@ -43,7 +40,7 @@
 
 .Instructions > .Header > .Logo {
   flex: 0;
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 .Instructions > .Header > .Text {
@@ -51,7 +48,7 @@
   font-size: 30px;
   line-height: 44px;
   font-weight: 700;
-  text-align: right;
+  text-align: left;
 }
 
 .Implementation {
