@@ -21,7 +21,7 @@ Basic Requirements
 
 - Clicking the _Trigger_ button should launch the UI component to capture user input.
 - UI component should consist of a text input as well as an area to display results matching user input.
-- Matching results based on the text input are displayed below the text input as a list in alphabetical order by `modified` (most recent modified first).
+- Matching results based on the text input are displayed below the text input as a list sorted by `modified` date (most recent modified first).
 - Each result should be selectable by mouse click as well as using the `↑` / `↓` arrow keys (and `↵` Enter key).
 - Upon selection, should update the _Selected Output_ area with the selected value.
 
